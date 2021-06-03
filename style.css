@@ -13,11 +13,13 @@ color: yellow;
 #top {
   height: 50%;
   width: 100%;
+  z-index: 1;
 }
 
 #bottom {
   height: 50%;
   width: 100%;
+  z-index: 1;
 }
 
 #googlemaps {
