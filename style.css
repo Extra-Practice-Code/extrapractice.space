@@ -166,4 +166,9 @@ img {
 
 @font-face {
 font-family: "AUTHENTICSans";
-src: url("fonts/AUTHENTICSans-Condensed-90.otf");
+src: url("fonts/AUTHENTICSans-Condensed-90.otf");}
+
+@font-face {
+font-family: "Arial Narrow";
+src: url("fonts/Arial Narrow.ttf");
+}
