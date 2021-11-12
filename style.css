@@ -2,35 +2,168 @@ body {
   margin: 0;
   height: 100vh;
   width: 100vw;
-  font-size: 55vh;
-  line-height: 50vh;
-  font-family: Arial Narrow,Arial,sans-serif;
-  background-color: black;
-  color: yellow;
-  -webkit-text-stroke: 1px black;
+  color: #000;
+  background-color: #FAF9F4;
+  font-family: Arial Narrow;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  font-weight: normal;
 }
 
-#top {
-  height: 50%;
+h1, h2 {
+  margin: 0;
+  font-family: Arial Narrow;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  font-weight: normal;
+  display:inline-block;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  margin: 20px;
+  margin-bottom: 0px;
+}
+
+a, a::after {
+  color: inherit;
+}
+a:hover {
+  color: #00f;
+}
+
+small {
+  font-family: AUTHENTICSans;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  font-weight: normal;
+}
+
+footer {
+  border-top: 1px dashed #000;
+  padding: 20px;
+  background-color: #00ab54;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px;
+  margin-bottom: -10px;
+  height: calc(30vw);
+}
+.grid-6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 10px;
+  margin-bottom: -10px;
+  height: calc(15vw);
+
+}
+
+.block {
+  margin: 10px;
+  padding: 10px;
+  border: dashed #000 1px;
+  border-radius: 10px;
+}
+.block:hover {
+  background-color: #ffd900;
+}
+
+.block-GTBT {
+  margin: 10px;
+  padding: 10px;
+  border: dashed red 1px;
+  border-radius: 10px;
+  font-family: times new roman;
+  color: red;
+}
+.block-GTBT:hover {
+  background-color: red;
+  color: white;
+}
+
+.block-friends {
+  margin: 10px;
+  padding: 10px;
+  border: dashed #ade2ff 1px;
+  border-radius: 10px;
+  color: #bfd8ff;
+}
+.block-friends:hover {
+  background-color: #ade2ff;
+  color: white;
+}
+
+.block-title {
+  margin: 10px;
+}
+.block-image {
+  margin: 10px;
+  border: dashed #000 1px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.block-upcomingevents {
+  margin: 10px;
+  padding: 10px;
+  border: dashed #00ab54 1px;
+  border-radius: 10px;
+  color: #00ab54;
+}
+
+.event {
+  padding: 10px;
+  border: 1px dashed #00ab54;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.event:hover {
+  background-color: #00ab54;
+  color: white;
+}
+
+img {
+    width: 100%; /* or any custom size */
+    height: 100%;
+    object-fit:fill;
+}
+
+#splash-canvas {
   width: 100%;
-  z-index: 1;
-}
-
-#bottom {
-  height: 50%;
-  width: 100%;
-  z-index: 1;
-}
-
-#googlemaps {
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  z-index: -1;
-}
-
-@media only screen and (max-width:600px) {
-
+  align-items: center;
+  justify-content: center;
+  z-index: -10;
+  overflow: hidden;
 
 }
+
+@media only screen and (max-width:800px) {
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+    margin-bottom: -10px;
+    height: auto;
+  }
+  .grid-6 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+    margin-bottom: -10px;
+    height: auto;
+  }
+
+}
+
+@font-face {
+font-family: "AUTHENTICSans";
+src: url("fonts/AUTHENTICSans-Condensed-90.otf");
