@@ -4,7 +4,7 @@ body {
   width: 100vw;
   color: #000;
   background-color: #FAF9F4;
-  font-family: Arial Narrow;
+  font-family: "Arial Narrow";
   font-size: 18px;
   letter-spacing: 0.02em;
   font-weight: normal;
@@ -36,7 +36,6 @@ a:hover {
 }
 
 small {
-  font-family: AUTHENTICSans;
   font-size: 14px;
   letter-spacing: 0.02em;
   font-weight: normal;
