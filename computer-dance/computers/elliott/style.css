@@ -1,0 +1,37 @@
+body {
+    color: #000;
+    background-color: green;
+}
+
+a, a:visited {
+    color: orange;
+}
+
+button {
+    color: white;
+    border: black 10px;
+  
+}
+button:hover{
+    background-color: orangered;
+}
+
+h3{
+    font-stretch: extra-expanded;
+    text-transform: capitalize;
+    text-align: center;
+    color: pink;
+    text-shadow: 2px 2px purple;
+}
+
+#sunset {
+    width: 100%;
+    height: 200px;
+    background: green;
+    animation: sunset 60s infinite;
+  }
+
+@keyframes sunset {
+    from {background-color: green;}
+    to {background-color: orange;}
+  }

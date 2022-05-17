@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Club Shared Mode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    Good morning.
+
+    <div style="border: 2px solid #000;">
+        <div style="border: 2px solid rgb(234, 171, 82);">
+            <div style="border: 2px solid #000;">
+                <div>1, 2, 3 <a href="https://madalynmerkey.bandcamp.com/album/oranges">oranges</a></div>
+
+            </div>
+            <h3>There's a sunset tonight</h3>
+        </div>
+
+        <button type="button" id="big-button">don't click it yet</button> 
+        <div id="sunset"></div>
+
+    </div>
+
+    <script>
+        document.querySelector('#big-button').addEventListener('click', () => {
+            alert('an open window on a spring day. life moving by all around you. will i ever have a day like this again?');
+        });
+    </script>
+</body>

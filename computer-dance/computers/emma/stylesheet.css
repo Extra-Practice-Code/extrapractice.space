@@ -1,0 +1,22 @@
+body {
+	font-size: 20px;
+	background-color: tomato;
+}
+
+#confession {
+	display: hidden;
+	opacity: 0.2;
+}
+
+#danger:hover{
+	border: 2px solid yellow;
+}
+
+#danger div{
+	visibility: hidden;
+}
+
+#danger:hover div{
+	display: block;
+	visibility: visible;
+}

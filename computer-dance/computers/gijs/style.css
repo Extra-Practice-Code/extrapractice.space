@@ -1,0 +1,28 @@
+body {
+  background: darksalmon;
+
+}
+
+h1 {
+
+  font-family: arial-black;
+  font-size: 40;
+
+}
+
+.person{
+  position: absolute;
+  animation: fade 10s infinite alternate;
+  margin: 0;
+}
+.person:hover {
+  background-color: #00f;
+}
+
+@keyframes fade {
+  0%   {margin: 0;}
+	25%  {margin: 200px;}
+	50%  {margin: 300px;}
+  75%  {margin: 700px;}
+  100% {margin: 300px;}
+	}

@@ -1,0 +1,22 @@
+body {
+ background-color: black;
+ color: white;
+
+}
+
+#block {
+
+
+}
+dt {
+  color: #000;
+  background-color: yellow;
+}
+
+h1{
+  font-style: italic;
+}
+
+button {
+  font-size: 30px;
+}
