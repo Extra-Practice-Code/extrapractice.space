@@ -93,7 +93,6 @@ nav#fixed-nav a {
     color: #000;
     margin-right: 10px;
     font-weight: bold;
-    display: inline-block;
     background-color: #fff;
     
 }
@@ -163,11 +162,11 @@ section h2 {
 section#exit {
     
 }
-section#exit figure {
+section#in-motion figure {
     margin: 0;
     padding: 0;
 }
-section#exit figure figcaption {
+section#in-motion figure figcaption {
     font-size: 16px;
 }
 
@@ -247,7 +246,7 @@ a#exercise {
     section#entrance h1 {
         font-size: 40px;
     }
-    #about, h2, ul, ol, li {
+    #about, h2, ul, ol {
         font-size: 30px;
     }
 
@@ -260,7 +259,7 @@ a#exercise {
     }
     section#cover #stage {
         width: 345px;
-        margin-top: -80px;
+        margin-top: -50px;
     }
     section#cover #dansje {
         max-width: 200px;
