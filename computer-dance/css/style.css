@@ -243,7 +243,7 @@ a#exercise {
     }
 
     /* Entrance */
-    section#entrance h1 {
+    section#intro h1 {
         font-size: 40px;
     }
     #about, h2, ul, ol {
