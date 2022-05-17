@@ -18,6 +18,7 @@ hr {
 section#cover {
     position: relative;
     z-index: 1000;
+    overflow-x: hidden;
 }
 section#cover #stage {
     position: relative;
@@ -27,6 +28,13 @@ section#cover #stage {
 }
 section#cover #stage a:hover {
     background-color: #fff;
+}
+section#cover #center-stage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 section#cover #dansje {
     background-color: #000;
@@ -123,6 +131,9 @@ section img {
 section#entrance {
     font-size: 50px;
 }
+section#entrance h1 {
+    margin-top: 20px;
+}
 #intro-video {
     width: 300px;
 }
@@ -145,7 +156,9 @@ section ol, section ul {
     font-size: 40px;
 }
 
-
+section h2 {
+    margin-top: 0;
+}
 section#exit {
     
 }
@@ -218,4 +231,60 @@ a#exercise {
     height: 10px;
     background-color: blue;
     border: 2px solid #000;
+}
+
+@media(max-width:600px) {
+    nav#fixed-nav a {
+        font-size: 18px;
+    }
+    nav#fixed-nav a::before {
+        width: 24px;
+        height: 20px;
+    }
+
+    /* Entrance */
+    section#entrance h1 {
+        font-size: 40px;
+    }
+    #about, h2, ul, ol {
+        font-size: 30px;
+    }
+
+    #computers a {
+         min-width: 100%;
+    }
+
+    section#cover nav a {
+        font-size: 14px;
+    }
+    section#cover #stage {
+        width: 345px;
+    }
+    section#cover #dansje {
+        max-width: 200px;
+    }
+    section#cover nav a#nav-entrance {
+        top: 191px;
+        left: 128px;
+    }
+    section#cover nav a#nav-ingredients {
+        top: 217px;
+        left: 239px;
+    }
+    section#cover nav a#nav-instructions {
+        top: 361px;
+        left: 229px;
+    }
+    section#cover nav a#nav-timer {
+        top: 378px;
+        left: 34px;
+    }
+    section#cover nav a#nav-examples {
+        top: 244px;
+        left: 7px;
+    }
+    section#cover nav a#nav-exit {
+        top: 421px;
+        left: 146px;
+    }
 }
