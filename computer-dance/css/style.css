@@ -195,6 +195,9 @@ a#exercise {
     margin-right: 20px;
     margin-bottom: 20px;
 }
+#computers a:hover {
+    background-color: #e6e6e6;
+}
 
 .computer {
     display: flex;
