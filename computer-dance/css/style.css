@@ -93,6 +93,7 @@ nav#fixed-nav a {
     color: #000;
     margin-right: 10px;
     font-weight: bold;
+    display: inline-block;
     background-color: #fff;
     
 }
