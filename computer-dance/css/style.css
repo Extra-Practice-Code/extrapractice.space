@@ -112,7 +112,7 @@ nav#fixed-nav a:hover::before {
 
 /* Sections */
 section {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     padding: 20px;
 }
@@ -259,6 +259,7 @@ a#exercise {
     }
     section#cover #stage {
         width: 345px;
+        margin-top: -50px;
     }
     section#cover #dansje {
         max-width: 200px;
