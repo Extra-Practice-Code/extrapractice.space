@@ -128,10 +128,10 @@ section img {
 }
 
 /* Intro */
-section#entrance {
+section#intro {
     font-size: 50px;
 }
-section#entrance h1 {
+section#intro h1 {
     margin-top: 20px;
 }
 #intro-video {
