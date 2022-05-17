@@ -146,6 +146,16 @@ section ol, section ul {
 }
 
 
+section#exit {
+    
+}
+section#exit figure {
+    margin: 0;
+    padding: 0;
+}
+section#exit figure figcaption {
+    font-size: 16px;
+}
 
 
 
@@ -175,7 +185,7 @@ a#exercise {
     color: #000;
     border: 3px solid #000;
     aspect-ratio: 16 / 9;
-    min-width: 200px;
+    min-width: 400px;
     /* background-color: rgb(29, 29, 29); */
     display: flex;
     flex-flow: column nowrap;
