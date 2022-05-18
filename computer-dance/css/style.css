@@ -91,19 +91,21 @@ nav#fixed-nav {
 }
 nav#fixed-nav a {
     color: #000;
+    font-size: 24px;
     margin-right: 10px;
     font-weight: bold;
     background-color: #fff;
-    
+    text-decoration: underline;
 }
 nav#fixed-nav a::before {
     content: '';
-    width: 100px;
-    height: 60px;
+    width: 70px;
+    height: 40px;
     display: inline-block;
     border: 3px solid #fff;
     background-color: #000;
     margin-right: 10px;
+    margin-bottom: -6px;
 }
 nav#fixed-nav a:hover::before {
     background-color: #fff;
@@ -247,7 +249,7 @@ a#exercise {
         font-size: 40px;
     }
     #about, h2, ul, ol {
-        font-size: 30px;
+        font-size: 30px !important;
     }
 
     #computers a {
