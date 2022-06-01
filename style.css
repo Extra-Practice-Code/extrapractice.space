@@ -44,7 +44,7 @@ small {
 footer {
   border-top: 1px dashed #000;
   padding: 20px;
-  background-color: #00ab54;
+  background-color: #007d35;
   height: 50px;
   margin-top: 20px;
 }
@@ -115,7 +115,7 @@ footer {
   padding: 10px;
   border: dashed #00ab54 1px;
   border-radius: 10px;
-  color: #00ab54;
+  color: ##007d35;
 }
 
 .event {
