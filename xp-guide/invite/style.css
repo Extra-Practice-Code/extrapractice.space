@@ -12,6 +12,11 @@ main {
     grid-template-columns: 1fr 1fr;
 }
 
+#intro-elderflower {
+    max-width: 150px;
+    padding: 5px;
+}
+
 h2 {
     color: #00AB54;
     background-color: #171c75;
