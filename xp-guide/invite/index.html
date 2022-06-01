@@ -10,51 +10,71 @@
 <body>
 
     <main>
-        <div id="intro">
-
+        <div id="column-one">
             <img src="images/elderflower.png" alt="" style="max-width: 200px;">
-
             <br><br>
 
-            <p style="margin-top: 0;">
-                <span style="background-color: #fff;"><span style="color: red;">Extra</span> Practice</span> would like to invite you to: <span style="background-color: yellowgreen;">Conviviality Party</span>! 
-                This <span style="color: #fff; background-color: royalblue;">Friday</span>, June 3rd, at the XP studio space (Zwaanshals 209)
-            </p>
-            
-            <p>This party will be all about interacting creatively and autonomously with others and our environment to satisfy our own needs. What are your needs? Bring them to our table! </p>
+            <div id="intro">
+                <p style="margin-top: 0;">
+                    <span style="background-color: #fff;"><span style="color: red;">Extra</span> Practice</span> would like to invite you to: <span style="background-color: yellowgreen;">Conviviality Party</span>! 
+                    This <span style="color: #fff; background-color: royalblue;">Friday</span>, <span style="background-color: orange;">June</span> <span style="color: orange; background-color: blue;">3</span><span style="background-color: #fff;">rd</span>, at the <span style="color: rgb(172, 255, 171);">X</span><span style="color: red;">P</span> studio space (<span style="font-family: monospace; color: yellow; background-color: blueviolet;">Zwaanshals 209</span>)
+                </p>
+                
+                <p>This party will be all about interacting creatively and autonomously with others and our environment to satisfy our own needs. What are your needs? Bring them to our table!</p>
+            </div>
 
+            <div id="schedule">
+                <!-- <h2>Table of contents</h2> -->
+                <h2>Schedule</h2>
+                <dl>
+                    <dt>17:00</dt>
+                    <dd><a href="https://goodtimesbadtimes.club/">Good Times Bad Times</a> mics and <a href="https://laurelschwulst.com/">Laurel Schwulst</a> (tune in or watch quietly!)</dd>
+                
+                    <dt>18:00</dt>
+                    <dd>Lekker food</dd>
+                
+                    <dt>19:00</dt>
+                    <dd>A paper tablecloth and pens, laptops containing XP guide (new & growing!)</dd>
+                
+                    <dt>20:00</dt>
+                    <dd>Convivial cocktails (but bring drinks for your needs!)</dd>
+                
+                    <dt>21:00</dt>
+                    <dd>Turn tables (<a href="https://soundcloud.com/benearl?utm_source=mobi&utm_campaign=social_sharing">Yung Goose</a>!)</dd>
+                
+                    <dt>22:00</dt>
+                    <dd>You???</dd>
+                </dl>
+            </div>
         </div>
+
+        <div id="column-two">
+            <div id="scene">
+                <img src="images/soccer-ball.png" id="soccer-ball" class="soccer-ball">
+                <img src="images/steering-wheel.png" id="steering-wheel" class="steering-wheel">
+                <img src="images/headlight-left.png" id="headlight-left" class="headlights">
+                <img src="images/headlight-right.png" id="headlight-right" class="headlights">
+                <img src="images/elderflower.png" id="elderflower-one" class="elderflowers">
+                <img src="images/elderflower.png" id="elderflower-two" class="elderflowers">
+                <img src="images/ocean.jpg" id="ocean" class="ocean">
+                <img src="images/table.png" id="table" class="table" checked">
+            </div>
+
+            <ul id="objects">
+                <li><input type="checkbox" data-target="elderflowers" autocomplete="off"> elderflowers</li>
+                <li><input type="checkbox" data-target="steering-wheel" autocomplete="off"> steering wheel</li>
+                <li><input type="checkbox" data-target="headlights" autocomplete="off"> headlights</li>
+                <li><input type="checkbox" data-target="soccer-ball" autocomplete="off"> soccer ball</li>
+                <li><input type="checkbox" data-target="table" checked autocomplete="off"> table</li>
+                <li><input type="checkbox" data-target="ocean" autocomplete="off"> ocean</li>
+            </ul>
+        </div>
+
         
-        <div id="schedule">
-
-            <img src="images/table.png" alt="table" id="table" style="max-width: 300px;">
-
-            <!-- <h2>Table of contents</h2> -->
-            
-            <dl>
-                <dt>17:00</dt>
-                <dd><a href="https://goodtimesbadtimes.club/">Good Times Bad Times</a> mics and <a href="https://laurelschwulst.com/">Laurel Schwulst</a> (tune in or watch quietly!)</dd>
-            
-                <dt>18:00</dt>
-                <dd>Lekker food</dd>
-            
-                <dt>19:00</dt>
-                <dd>A paper tablecloth and pens, laptops containing XP guide (new & growing!)</dd>
-            
-                <dt>20:00</dt>
-                <dd>Convivial cocktails (but bring drinks for your needs!)</dd>
-            
-                <dt>21:00</dt>
-                <dd>Turn tables (<a href="https://soundcloud.com/benearl?utm_source=mobi&utm_campaign=social_sharing">Yung Goose</a>!)</dd>
-            
-                <dt>22:00</dt>
-                <dd>You???</dd>
-            </dl>
-
-            <br><br><br>
-
-        </div>
+        
+        
     </main>
 
+    <script src="script.js"></script>
 </body>
 </html>

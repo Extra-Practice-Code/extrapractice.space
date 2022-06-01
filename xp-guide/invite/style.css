@@ -1,5 +1,6 @@
 *, *:before, *:after { box-sizing: border-box; }
 body {
+    color: #000;
     background-color: #00AB54;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
@@ -9,7 +10,15 @@ body {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
+}
+
+h2 {
+    color: #00AB54;
+    background-color: #171c75;
+    display: inline-block;
+    padding: 2px;
+    font-size: 16px !important;
+    margin-bottom: 0;
 }
 
 .highlight {
@@ -17,11 +26,14 @@ main {
 }
 #intro {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
+    padding: 10px;
+}
+#column-two {
+    border-left: 3px solid #007c3c45;
     padding: 10px;
 }
 #schedule {
-    border-left: 3px solid #007c3c45;
     padding: 10px;
 }
 
@@ -37,7 +49,9 @@ h2 {
 dl {
     font-family: monospace;
     font-size: 14px;
-    max-width: 500px;
+    margin-top: 0;
+    color: #0a3608;
+    /* max-width: 500px; */
 }
 dt {
     font-weight: bold;
@@ -54,13 +68,83 @@ dt::after {
     display: inline-block;
     width: 90%;
     height: 20px;
-    border-bottom: 4px solid #000;
+    border-bottom: 4px solid #171c75;
     margin-left: 4px;
 }
 
-#table {
+#objects {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#objects li {
+    font-size: 14px;
+    font-family: monospace;
+    /* border-bottom: 1px solid #000; */
+    /* background-color: rgba(0, 0, 0, 0.074);
+    margin-bottom: 2px; */
+}
+#objects li:last-child {
+    border-bottom: 0;
+}
+#objects input {
+    outline: none;
+}
+
+#scene {
+    position: relative;
+    /* max-width: 500px; */
+    max-width: 100%;
+    height: 34vw;
+}
+#scene * {
+    position: absolute;
+}
+#scene #ocean {
     width: 100%;
-    max-width: 800px;
+    display: none;
+}
+#scene #table {
+    width: 100%;
+    top: 20px;
+    margin-bottom: 60px;
+}
+#scene #elderflower-one {
+    width: 100px;
+    z-index: 2;
+    display: none;
+}
+#scene #elderflower-two {
+    right: 0;
+    width: 100px;
+    z-index: 2;
+    display: none;
+}
+#scene #headlight-left {
+    width: 100px;
+    z-index: 2;
+    display: none;
+}
+#scene #headlight-right {
+    width: 100px;
+    z-index: 2;
+    right: 0;
+    display: none;
+}
+#scene #steering-wheel {
+    width: 150px;
+    z-index: 2;
+    top: 30%; right: 50%;
+    transform: translate(50%,-50%);
+    display: none;
+}
+#scene #soccer-ball {
+    width: 100px;
+    top: 10px;
+    right: 100px;
+    z-index: 2;
+    opacity: .5;
+    display: none;
 }
 
 @media(max-width: 700px) {
@@ -68,4 +152,13 @@ dt::after {
         display: grid;
         grid-template-columns: 1fr;
     }    
+    dd {
+        margin-left: 0;
+    }
+    dt::after {
+        width: 86%;
+    }
+    #scene {
+        height: 70vw;
+    }
 }
