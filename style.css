@@ -113,20 +113,20 @@ footer {
 .block-events {
   margin: 10px;
   padding: 10px;
-  border: dashed #00ab54 1px;
+  border: dashed #007d35 1px;
   border-radius: 10px;
-  color: ##007d35;
+  color: #007d35;
 }
 
 .event {
   padding: 10px;
-  border: 1px dashed #00ab54;
+  border: 1px dashed #007d35;
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 10px;
 }
 .event:hover {
-  background-color: #00ab54;
+  background-color: #007d35;
   color: white;
 }
 
