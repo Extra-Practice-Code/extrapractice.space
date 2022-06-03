@@ -1,0 +1,126 @@
+*, *:before, *:after { box-sizing: border-box; }
+
+:root{
+  --xpgreen: #00943f;
+}
+
+body {
+    /* cursor: url("images/tinyspade.png") 0 31, crosshair; */
+    color: #000;
+    background-color: #eee;
+    font-family: Arial Narrow, Times, sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+/* FAMILY TOGGLES */
+label:hover{
+  color: var(--xpgreen);
+}
+
+.family input{
+	opacity: 1;
+	height: auto;
+	width: auto;
+}
+
+.family:checked ~ .things{
+	display: block;
+	visibility: visible;
+}
+
+.things {
+	display: none;
+	visibility: visible;
+}
+
+/* THE THINGS */
+
+.thing {
+	position: fixed;
+	/* width: 100px; */
+	/* display:none; */
+}
+
+.thing:hover {
+	filter: drop-shadow(2px 2px 1px #222);
+}
+
+/* THE CARDS */
+
+.card {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+	visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.card:target {
+		visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+	}
+a.back {
+	display: block;
+	height: 100vh;
+	width: 100vw;
+}
+
+.card > div {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: rgb(0,255,0);
+		border: 0 0 0 20px white;
+}
+
+.card-close {
+  color: #000;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+.card-close:hover{
+  color: var(--xpgreen);
+}
+
+.card-image{
+	width: 200px;
+	height: auto;
+	display: block;
+	margin: auto;
+}
+
+.card h2 {
+	font-size: 1.8em;
+  font-weight: bold;
+	text-transform: capitalize;
+	text-align: left;
+}
+
+h3 {
+	font-size: 0.8em;
+	font-weight: 100;
+	text-align: left;
+  font-style: italic;
+	/* text-transform: uppercase; */
+	/* letter-spacing: 0.1em; */
+	}
+
+
+p	{
+}
