@@ -94,7 +94,7 @@ label:hover{
 }
 
 .thing:hover {
-	filter: drop-shadow(2px 2px 1px #222);
+	filter: drop-shadow(2px 2px 5px #2F2);
 }
 
 /* THE CARDS */
@@ -174,4 +174,17 @@ h3 {
 
 
 p	{
+}
+
+/* PLANTS */
+
+.plant{
+  position: fixed;
+}
+.plant .full{
+  display: none;
+}
+
+.plant:hover .full {
+  display:block;
 }
