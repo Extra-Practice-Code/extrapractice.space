@@ -13,9 +13,60 @@ body {
     margin: 0;
 }
 
+h1{
+  position: fixed;
+  top:0;
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+/* PHOTOWALL */
+
+#photowall{
+  width: 80vw;
+  left:10vw;
+  position: relative;
+  z-index: -2;
+}
+#photolabel{
+  position: fixed;
+  bottom: 10px;
+}
+#photocheck{
+  position: fixed;
+  bottom: 10px;
+  left: 80px;
+}
+
+figure {
+  z-index: -2;
+  /* display: block; */
+  position: relative;
+  width: fit-content;
+  color: black;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  padding: 5px;
+  margin: 5px;
+}
+
 /* FAMILY TOGGLES */
+ul{
+  position: fixed;
+  top: 50px;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  margin-left: 0;
+}
+label{
+  margin-left: 10px;
+}
 label:hover{
   color: var(--xpgreen);
+  cursor: crosshair;
 }
 
 .family input{
