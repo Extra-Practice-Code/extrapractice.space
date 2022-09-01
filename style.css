@@ -58,14 +58,14 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   margin: 10px;
   margin-bottom: -10px;
-  height: calc(30vw);
+  height: calc(33vw);
 }
 .grid-6 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   margin: 10px;
   margin-bottom: -10px;
-  height: calc(15vw);
+  height: calc(16.5vw);
 
 }
 
@@ -74,32 +74,29 @@ footer {
   padding: 10px;
   border: dashed #000 1px;
   border-radius: 10px;
+  
+  overflow: scroll;
 }
 .block:hover {
   background-color: #ffd900;
 }
 
-.block-GTBT {
-  margin: 10px;
-  padding: 10px;
-  border: dashed red 1px;
-  border-radius: 10px;
+#GTBT {
   font-family: times new roman;
   color: red;
 }
-.block-GTBT:hover {
+#GTBT:hover {
   background-color: red;
   color: white;
 }
 
-.block-friends {
-  margin: 10px;
-  padding: 10px;
+#friends {
   border: dashed #ade2ff 1px;
   border-radius: 10px;
   color: #bfd8ff;
 }
-.block-friends:hover {
+
+#friends:hover {
   background-color: #ade2ff;
   color: white;
 }
@@ -114,9 +111,7 @@ footer {
   overflow: hidden;
 }
 
-.block-events {
-  margin: 10px;
-  padding: 10px;
+#events {
   border: dashed var(--xpgreen) 1px;
   border-radius: 10px;
   color: var(--xpgreen);
