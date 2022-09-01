@@ -74,7 +74,7 @@ footer {
   padding: 10px;
   border: dashed #000 1px;
   border-radius: 10px;
-  
+
   overflow: scroll;
 }
 .block:hover {
@@ -132,7 +132,7 @@ footer {
 img {
     width: 100%; /* or any custom size */
     height: 100%;
-    object-fit:fill;
+    object-fit:cover;
 }
 
 #splash-canvas {
