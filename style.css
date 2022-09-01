@@ -84,6 +84,7 @@ footer {
 #GTBT {
   font-family: times new roman;
   color: red;
+  border: dashed #f00 1px;
 }
 #GTBT:hover {
   background-color: red;
@@ -115,6 +116,10 @@ footer {
   border: dashed var(--xpgreen) 1px;
   border-radius: 10px;
   color: var(--xpgreen);
+}
+
+#events:hover{
+  background-color: inherit;
 }
 
 .event {
