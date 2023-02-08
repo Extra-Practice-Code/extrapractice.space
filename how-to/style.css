@@ -180,11 +180,20 @@ p	{
 
 .plant{
   position: fixed;
+  background-blend-mode: lighten; 
+}
+
+.plant:hover{
+  filter: drop-shadow(2px 2px 5px #2F2);
+  background-blend-mode: darken;
 }
 .plant .full{
-  display: none;
+  /* display: none; */
+  visibility: hidden;
 }
 
 .plant:hover .full {
-  display:block;
+  filter: drop-shadow(2px 2px 5px #2F2);
+  display: block;
+  visibility: visible;
 }
