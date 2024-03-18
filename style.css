@@ -177,10 +177,10 @@ src: url("fonts/Arial Narrow.ttf");
 }
 
 /* BUTTON */
-.copy-btn {
+#copy-btn {
   padding: 15px;
   cursor: pointer;
-  margin: 2em auto;
+  margin: 1em auto;
   display: block;
   background: none;
   border: 1px solid black;
@@ -188,18 +188,7 @@ src: url("fonts/Arial Narrow.ttf");
   font-family: inherit;
   font-size: 1em;
 }
-.copy-btn:hover{
+#copy-btn:hover{
   background-color: lightgoldenrodyellow;
   cursor:pointer;
-}
-
-#copy-success-popup {
-  display: none;
-  position: absolute;
-  transform: translate(-28%, -100%);
-  background: #FAF9F4;
-  padding: 10px 15px;
-  border: 1px solid black;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-  z-index: 999;
 }

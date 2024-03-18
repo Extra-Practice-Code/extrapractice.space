@@ -154,11 +154,9 @@
       </p><br> -->
       <p>→ Follow <a href="https://www.instagram.com/extrapractice" target="_blank" rel="noopener noreferrer">@extrapractice</a> for quick updates on news and (past / future) events!</p><br>
       <p>→ If you would like to join an event, initiate a workshop or simply drop by for a coffee and a chat, don't hesitate to <a href="mailto:extrapractice.space@gmail.com">email us</a>!</p>
-      <button class="copy-btn" onclick="copyEmail()">Or copy our email!
-        <div id="copy-success-popup">
-            <p>Copied 'extrapractice.space@gmail.com'!</p>
-        </div>
-    </button>
+     
+      <button id="copy-btn" onclick="copyEmail()">Or copy our email!</button>
+      <!-- <div id="copy-success-popup">Copied 'extrapractice.space@gmail.com'!</div> -->
 
     </div>
     <div class="block-image">
@@ -175,7 +173,7 @@
 <script>
   function copyEmail() {
     // Get the email address
-    var email = 'info@supergijs.com';
+    var email = 'extrapractice.space@gmail.com';
 
     // Create a temporary input element
     var tempInput = document.createElement('input');
@@ -189,18 +187,14 @@
     // Remove the temporary input element
     document.body.removeChild(tempInput);
 
-    // Show the copy success popup
-    showCopySuccessPopup();
-  }
+    // Change the button text to indicate successful copy
+    var button = document.getElementById('copy-btn');
+    button.innerText = 'Copied "extrapractice.space@gmail.com"';
 
-  function showCopySuccessPopup() {
-    var popup = document.getElementById('copy-success-popup');
-    popup.style.display = 'block';
-
-    // Hide the popup after 2 seconds (adjust as needed)
+    // Revert the button text after 3 seconds (adjust as needed)
     setTimeout(function() {
-      popup.style.display = 'none';
-    }, 4000);
+        button.innerText = 'Or copy our email!';
+    }, 3000);
   }
 </script>
 </html>
