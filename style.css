@@ -224,7 +224,8 @@ footer #footer-inner {
     background-color: var(--xpgreen);
     height: 50px;
     margin-top: auto;
-    margin-top: 20px
+    margin-top: 20px;
+    height: 100%;
 }
 
 /* Mobile */
@@ -242,7 +243,15 @@ footer #footer-inner {
   .map {
     height: 230px;
   }
-
+  .block:hover, .event:hover, #GTBT:hover {
+    background-color: initial;
+  }
+  #GTBT:hover {
+    color: red;
+  }
+  .event:hover {
+    color: var(--xpgreen);
+  }
 }
 
 /* Fonts */
