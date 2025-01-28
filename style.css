@@ -78,7 +78,7 @@ a:hover {
 #GTBT:hover {
   background-color: red;
   color: white;
-}
+} 
 
 #friends {
   border: dashed #ade2ff 1px;
@@ -95,9 +95,20 @@ a:hover {
   margin: 10px;
 }
 
+/* Map */
+.map {
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.map iframe {
+    border-radius: 10px;
+    filter: saturate(130%) contrast(100%);
+}
+
 /* Activity Image */
 figure.block-image {
-  margin: 10px;
+  margin: 10px; 
   border: dashed #000 1px;
   border-radius: 10px;
   overflow: hidden;

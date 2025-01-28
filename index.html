@@ -21,8 +21,9 @@
       <br><br>
       The space originated from a desire to create a “school-after-school;” a fruitful environment for working and learning amongst peers, which we were missing after we all finished our Masters in 2019. Within Extra Practice we support each other's individual practices, and organise workshops, presentations and public events to share insights and experiences.</p>
     </div>
-    <div class="block-image">
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4580.950326578974!2d4.4838599135071275!3d51.93480397179646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c4332561e2c29b%3A0xfed38809c8208ece!2sExtra%20Practice!5e1!3m2!1sen!2snl!4v1682241683787!5m2!1sen!2snl" width="101%" height="101%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="block-image map">
+       <iframe width="101%" height="101%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=4.488%2C51.934%2C4.493%2C51.937&amp;layer=mapnik&amp;marker=51.9354297%2C4.4904376" style="border: 0"></iframe>
+       <small><a href="https://www.openstreetmap.org/?mlat=51.9354297&amp;mlon=4.4904376#map=17/51.9354297/4.4904376" target="_blank">View Larger Map</a></small>
     </div>
     <div id="events" class="block">
       <p>Events</p><br>
@@ -144,9 +145,11 @@
 
   <!-- People -->
   <div class="grid-6 people">
-<!--     <div class="block-image">
-      <img src="images/plant.jpg" alt="plant on a shelf">
-    </div> -->
+    <!--
+    <div class="block-image">
+    <img src="images/plant.jpg" alt="plant on a shelf">
+    </div>
+    -->
     <div class="block">
       <p>Benjamin Earl</p><br>
       <p>→ <a href="https://www.bnjmnearl.eu/" target="_blank" rel="noopener noreferrer">website</a></p>
@@ -213,43 +216,14 @@
   </div>
   <footer>
     <div id="footer-inner">
-        <small>Last updated: 02.10.2024</small>
+        <small>Last updated: <span id="last-updated">02.10.2024</span> at <span id="last-updated-time"></span> by <span id="last-updated-author"></span></small>
     </div>
   </footer>
-
-
 </body>
 
-<script src="js/canvas.js"></script>
-
-<!-- Get random images from Are.na activity channel -->
+<!-- JavaScripts! -->
 <script src="js/arena.js?v=1.0"></script>
+<script src="js/last-updated.js?v=1.0"></script>
+<script src="js/copy-email.js?v=1.0"></script>
 
-<script>
-  function copyEmail() {
-    // Get the email address
-    var email = 'mail@extrapractice.space';
-
-    // Create a temporary input element
-    var tempInput = document.createElement('input');
-    tempInput.value = email;
-    document.body.appendChild(tempInput);
-
-    // Select and copy the email address
-    tempInput.select();
-    document.execCommand('copy');
-
-    // Remove the temporary input element
-    document.body.removeChild(tempInput);
-
-    // Change the button text to indicate successful copy
-    var button = document.getElementById('copy-btn');
-    button.innerText = 'Copied "mail@extrapractice.space"';
-
-    // Revert the button text after 3 seconds (adjust as needed)
-    setTimeout(function() {
-        button.innerText = 'Or copy our email!';
-    }, 3000);
-  }
-</script>
 </html>

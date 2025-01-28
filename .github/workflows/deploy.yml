@@ -1,0 +1,24 @@
+name: Deploy to Digital Ocean Server
+
+on:
+  push:
+    branches:
+      - main  # Or your default branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Deploy to Server
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SERVER_IP }}
+        username: ${{ secrets.SERVER_USER }}
+        key: ${{ secrets.DEPLOY_KEY }}
+        script: |
+          cd /var/www/extrapractice.space
+          git pull origin main
