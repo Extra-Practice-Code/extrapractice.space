@@ -143,6 +143,7 @@ figure.block-image {
   overflow: hidden;
   position: relative;
   margin: 0;
+  height: 100%;
 }
 figure.block-image img {
   width: 100%;
