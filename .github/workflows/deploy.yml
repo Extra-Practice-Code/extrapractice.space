@@ -20,5 +20,5 @@ jobs:
         username: ${{ secrets.SERVER_USER }}
         key: ${{ secrets.DEPLOY_KEY }}
         script: |
-          cd /var/www/extrapractice.space
+          cd /var/www/local.extrapractice.space
           git pull origin main
