@@ -255,6 +255,12 @@ footer #footer-inner {
   #GTBT:hover {
     color: red;
   }
+
+  #events{
+    max-height: 80dvh;
+    /* overflow-y: scroll; */
+  }
+
   .event:hover {
     color: var(--xpgreen);
   }
