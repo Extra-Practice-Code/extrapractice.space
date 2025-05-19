@@ -9,9 +9,16 @@ hey! this is the extra practice website 🟥🟩 rEaD mE
 - [] some element that shows our presence in the space. something tha syncs with the space? (ec)
 - [] add an index of all the different subdomains (made and proposed)
 
-List of subdomains:
+## Subdomains
+
+## Proposed
+[ ] library.extrapractice.space
+[ ] space.extrapractice.space
+[ ] events.extrapractice.space
+[ ] 
+
+## Active
 - remote.extrapractice.space
-- library.extrapractice.space
 - local.extrapractice.space
 - newsletter.extrapractice.space
 - space.extrapractice.space
