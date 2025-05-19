@@ -12,10 +12,10 @@ hey! this is the extra practice website 🟥🟩 rEaD mE
 ## Subdomains
 
 ## Proposed
-[ ] library.extrapractice.space
-[ ] space.extrapractice.space
-[ ] events.extrapractice.space
-[ ] 
+- [] library.extrapractice.space
+- [] space.extrapractice.space
+- [] events.extrapractice.space
+- [] 
 
 ## Active
 - remote.extrapractice.space
