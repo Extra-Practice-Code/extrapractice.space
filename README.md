@@ -11,18 +11,18 @@ hey! this is the extra practice website 🟥🟩 rEaD mE
 
 ## Subdomains
 
-### Proposed  
-- [ ] [library.extrapractice.space](https://library.extrapractice.space)  
-- [ ] [space.extrapractice.space](https://space.extrapractice.space)  
-- [ ] [events.extrapractice.space](https://events.extrapractice.space)
+| Status   | Subdomain                               | Link                                            |
+|-----------|----------------------------------------|-------------------------------------------------|
+| **Proposed** | library.extrapractice.space           | [library.extrapractice.space](https://library.extrapractice.space) |
+| **Proposed** | space.extrapractice.space             | [space.extrapractice.space](https://space.extrapractice.space) |
+| **Proposed** | events.extrapractice.space            | [events.extrapractice.space](https://events.extrapractice.space) |
+| **Active**   | remote.extrapractice.space            | [remote.extrapractice.space](https://remote.extrapractice.space) |
+| **Active**   | local.extrapractice.space             | [local.extrapractice.space](https://local.extrapractice.space) |
+| **Active**   | newsletter.extrapractice.space        | [newsletter.extrapractice.space](https://newsletter.extrapractice.space) |
+| **Active**   | space.extrapractice.space             | [space.extrapractice.space](https://space.extrapractice.space) |
+| **Active**   | telepresence.extrapractice.space      | [telepresence.extrapractice.space](https://telepresence.extrapractice.space) |
+| **Active**   | kino.extrapractice.space              | [kino.extrapractice.space](https://kino.extrapractice.space) |
+| **Active**   | activity.extrapractice.space          | [activity.extrapractice.space](https://activity.extrapractice.space) |
+| **Active**   | approach.extrapractice.space          | [approach.extrapractice.space](https://approach.extrapractice.space) |
+| **Active**   | pomodoro.extrapractice.space          | [pomodoro.extrapractice.space](https://pomodoro.extrapractice.space) |
 
-### Active
-- [remote.extrapractice.space](https://remote.extrapractice.space)  
-- [local.extrapractice.space](https://local.extrapractice.space)  
-- [newsletter.extrapractice.space](https://newsletter.extrapractice.space)  
-- [space.extrapractice.space](https://space.extrapractice.space)  
-- [telepresence.extrapractice.space](https://telepresence.extrapractice.space)  
-- [kino.extrapractice.space](https://kino.extrapractice.space)  
-- [activity.extrapractice.space](https://activity.extrapractice.space)  
-- [approach.extrapractice.space](https://approach.extrapractice.space)  
-- [pomodoro.extrapractice.space](https://pomodoro.extrapractice.space)  
