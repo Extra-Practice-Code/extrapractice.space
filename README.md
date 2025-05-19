@@ -1,8 +1,8 @@
 # extrapractice.space
 
-hey! this is the extra practice website 🟥🟩 rEaD mE
+Welcome to the Extra Practice site 🟥🟩 rEaD mE
 
-### Proposed Updates:
+## Todos
 - [x] Replace Google Maps with OpenStreetMap or hand-drawn map? (ec)  
 - [x] "Last updated" could pull from the last commit date (ec)  
 - [x] Put newsletter subscription form on the homepage (ec)  
