@@ -10,7 +10,13 @@ hey! this is the extra practice website 🟥🟩 rEaD mE
 - [] add an index of all the different subdomains (made and proposed)
 
 List of subdomains:
-- remote
-- library
-- local
-- newsletter
+- remote.extrapractice.space
+- library.extrapractice.space
+- local.extrapractice.space
+- newsletter.extrapractice.space
+- space.extrapractice.space
+- telepresence.extrapractice.space
+- kino.extrapractice.space
+- activity.extrapractice.space
+- approach.extrapractice.space
+- pomodoro.extrapractice.space
