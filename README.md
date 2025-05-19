@@ -35,4 +35,21 @@ Welcome to the Extra Practice site rEaD mE
 | **Active**   | approach.extrapractice.space            | [approach.extrapractice.space](https://approach.extrapractice.space) |
 | **Active**   | pomodoro.extrapractice.space            | [pomodoro.extrapractice.space](https://pomodoro.extrapractice.space) |
 
+<hr>
 
+## Log
+### 19.05.2025
+First meeting of the WWW (website working wad). We cleaned up the extrapractice.space repo and made some new subdomains for things we moved out to other places. We made personal subdomains for xp members to fill to their hearts content. The sun was shining and we listened to NTS the whole time. Jack is cooking lunch now so we'll eat soon.
+
+completed:
+- added Jacks spring voicenote newsletter to the newsletter subdomain. Now available here: https://newsletter.extrapractice.space/2023-spring/spring.html
+- changed how-to page to a subdomain: how-to.extrapractice.space
+- made the friends.extrapractice.space subdomain
+- made index.extrapractice.space domain
+- made subdomains for xp members
+
+to do:
+- work on the events page (page per event perhaps)
+- figure out whether to integrate these extra things into the home somehow
+- webcam?
+- music/whats on the speakers at XP?
