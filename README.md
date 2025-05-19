@@ -9,3 +9,8 @@ hey! this is the extra practice website 🟥🟩 rEaD mE
 - [] some element that shows our presence in the space. something tha syncs with the space? (ec)
 - [] add an index of all the different subdomains (made and proposed)
 
+List of subdomains:
+- remote
+- library
+- local
+- newsletter
