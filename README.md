@@ -1,6 +1,8 @@
 # extrapractice.space
 
-Welcome to the Extra Practice site 🟥🟩 rEaD mE
+Welcome to the Extra Practice site rEaD mE
+
+🟩
 
 ## Todos
 - [x] Replace Google Maps with OpenStreetMap or hand-drawn map? (ec)  
