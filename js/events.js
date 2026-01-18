@@ -115,16 +115,6 @@ function displayEvents(events) {
       eventDiv.style.padding = '8px';
       eventDiv.style.borderRadius = '4px';
       eventDiv.style.boxShadow = '0 0 8px rgb(255, 200, 0)';
-      eventDiv.style.transition = 'background-color 0.3s ease';
-
-      // Add hover effect
-      eventDiv.addEventListener('mouseenter', () => {
-        eventDiv.style.backgroundColor = 'rgba(255, 255, 0, 0.2)';
-      });
-
-      eventDiv.addEventListener('mouseleave', () => {
-        eventDiv.style.backgroundColor = 'transparent';
-      });
     }
 
     // Add tiny image if available
