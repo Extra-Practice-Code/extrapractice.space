@@ -99,12 +99,33 @@ function displayEvents(events) {
   }
 
   // Create event elements
+  const now = new Date();
+
   events.forEach(event => {
     const eventDiv = document.createElement('div');
     eventDiv.className = 'event';
     eventDiv.style.display = 'flex';
     eventDiv.style.gap = '10px';
     eventDiv.style.alignItems = 'flex-start';
+    eventDiv.style.color = '#000';
+
+    // Add glow effect for upcoming events
+    const isUpcoming = event.dateObj >= now;
+    if (isUpcoming) {
+      eventDiv.style.padding = '8px';
+      eventDiv.style.borderRadius = '4px';
+      eventDiv.style.boxShadow = '0 0 8px rgb(255, 200, 0)';
+      eventDiv.style.transition = 'background-color 0.3s ease';
+
+      // Add hover effect
+      eventDiv.addEventListener('mouseenter', () => {
+        eventDiv.style.backgroundColor = 'rgba(255, 255, 0, 0.2)';
+      });
+
+      eventDiv.addEventListener('mouseleave', () => {
+        eventDiv.style.backgroundColor = 'transparent';
+      });
+    }
 
     // Add tiny image if available
     if (event.tinyImageUrl) {
@@ -112,6 +133,14 @@ function displayEvents(events) {
       imageLink.href = event.link;
       imageLink.target = '_blank';
       imageLink.rel = 'noopener noreferrer';
+
+      // Prevent hover color change
+      imageLink.addEventListener('mouseenter', (e) => {
+        e.currentTarget.style.color = '#000';
+      });
+      imageLink.addEventListener('mouseleave', (e) => {
+        e.currentTarget.style.color = '#000';
+      });
 
       const img = document.createElement('img');
       img.src = event.tinyImageUrl;
@@ -149,100 +178,6 @@ function displayEvents(events) {
     eventDiv.appendChild(textContainer);
     eventsContainer.appendChild(eventDiv);
   });
-
-  // Create marquee for upcoming events
-  createMarquee(events);
-}
-
-function createMarquee(events) {
-  const now = new Date();
-  const upcomingEvents = events.filter(event => event.dateObj >= now);
-
-  if (upcomingEvents.length === 0) {
-    return; // Don't show marquee if no upcoming events
-  }
-
-  // Check if marquee already exists
-  let marquee = document.getElementById('events-marquee');
-  if (!marquee) {
-    marquee = document.createElement('div');
-    marquee.id = 'events-marquee';
-    marquee.style.cssText = `
-      background: yellow;
-      color: #000;
-      padding: 5px 0;
-      overflow: hidden;
-      white-space: nowrap;
-      position: relative;
-      width: 100%;
-      margin: 0 0 5px 0;
-      line-height: 1.5;
-      height: auto;
-      min-height: 35px;
-      display: flex;
-      align-items: center;
-      margin-bottom: -10px;
-    `;
-
-    // Pause animation on hover
-    marquee.addEventListener('mouseenter', () => {
-      const content = marquee.querySelector('div');
-      if (content) content.style.animationPlayState = 'paused';
-    });
-
-    marquee.addEventListener('mouseleave', () => {
-      const content = marquee.querySelector('div');
-      if (content) content.style.animationPlayState = 'running';
-    });
-
-    // Insert at the very top of body
-    document.body.insertBefore(marquee, document.body.firstChild);
-  }
-
-  // Build events list HTML
-  let eventsHTML = '';
-  upcomingEvents.forEach((event, index) => {
-    if (index > 0) {
-      eventsHTML += '<span style="margin: 0 30px;"></span>';
-    }
-
-    const timeStr = event.time ? ` at ${event.time}` : '';
-    const imgHTML = event.tinyImageUrl
-      ? `<img src="${event.tinyImageUrl}" alt="${event.title}" style="width: 20px; height: 20px; object-fit: cover; vertical-align: middle; margin-right: 5px;">`
-      : '';
-    eventsHTML += `${imgHTML}${event.date}${timeStr} - ${event.title}`;
-  });
-
-  // Create marquee content with "upcoming:" only once, then duplicate events
-  const marqueeContent = document.createElement('div');
-  marqueeContent.style.cssText = `
-    display: inline-block;
-    white-space: nowrap;
-    animation: marquee 40s linear infinite;
-  `;
-
-  // Create the full marquee text that will scroll continuously
-  const marqueeText = `<span style="font-weight: bold;">upcoming:</span> ${eventsHTML}`;
-
-  // Duplicate the content multiple times for seamless loop
-  marqueeContent.innerHTML = marqueeText + '<span style="margin: 0 30px;"></span>' + marqueeText + '<span style="margin: 0 30px;"></span>' + marqueeText;
-
-  marquee.innerHTML = '';
-  marquee.appendChild(marqueeContent);
-
-  // Add animation if not already in stylesheet
-  if (!document.getElementById('marquee-style')) {
-    const style = document.createElement('style');
-    style.id = 'marquee-style';
-    style.textContent = `
-      body { margin: 0; padding: 0; }
-      @keyframes marquee {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-33.333%); }
-      }
-    `;
-    document.head.appendChild(style);
-  }
 }
 
 // Load events when DOM is ready
