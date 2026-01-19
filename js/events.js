@@ -51,6 +51,7 @@ function parseEventMetadata(block) {
   // Extract date and time using regex
   const dateMatch = relevantContent.match(/date:\s*(\d{2}\.\d{2}\.\d{4})/);
   const timeMatch = relevantContent.match(/time:\s*([\d:-]+)/);
+  const linkMatch = relevantContent.match(/link:\s*(.+)/);
 
   if (!dateMatch) {
     return null; // No valid date found
@@ -58,6 +59,7 @@ function parseEventMetadata(block) {
 
   const dateStr = dateMatch[1];
   const timeStr = timeMatch ? timeMatch[1] : '';
+  const customLink = linkMatch ? linkMatch[1].trim() : null;
 
   // Parse date for sorting (convert DD.MM.YYYY to Date object)
   const [day, month, year] = dateStr.split('.');
@@ -78,7 +80,8 @@ function parseEventMetadata(block) {
     title: title,
     dateObj: dateObj,
     tinyImageUrl: block.image?.small?.src || block.image?.square?.src,
-    link: `https://www.are.na/block/${block.id}`
+    link: customLink || `https://www.are.na/block/${block.id}`,
+    hasCustomLink: !!customLink
   };
 }
 
@@ -158,7 +161,29 @@ function displayEvents(events) {
     datePara.textContent = dateTimeText;
 
     const titlePara = document.createElement('p');
-    titlePara.textContent = event.title;
+
+    // If there's a custom link, make the title a link
+    if (event.title) {
+      if (event.hasCustomLink) {
+        const titleLink = document.createElement('a');
+        titleLink.href = event.link;
+        titleLink.textContent = event.title;
+        titleLink.target = '_blank';
+        titleLink.rel = 'noopener noreferrer';
+
+        // Prevent hover color change
+        titleLink.addEventListener('mouseenter', (e) => {
+          e.currentTarget.style.color = '#000';
+        });
+        titleLink.addEventListener('mouseleave', (e) => {
+          e.currentTarget.style.color = '#000';
+        });
+
+        titlePara.appendChild(titleLink);
+      } else {
+        titlePara.textContent = event.title;
+      }
+    }
 
     textContainer.appendChild(datePara);
     if (event.title) {
