@@ -186,4 +186,31 @@
 <!-- <script src="js/last-updated.js?v=1.3"></script> -->
 <script src="js/copy-email.js?v=1.3"></script>
 
+
+<!-- Color square background thingy... -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // 1. Select all elements with the class 'color-square'
+    const squares = document.querySelectorAll('.color-square');
+
+    // 2. Loop through each square
+    squares.forEach(square => {
+      
+      // Make them look clickable via JS (or handle this in CSS)
+      square.style.cursor = 'pointer';
+
+      // 3. Add a click event listener
+      square.addEventListener('click', function() {
+        
+        // Get the color defined in the 'title' attribute 
+        // (e.g., "#39bc63")
+        const color = this.getAttribute('title');
+
+        // 4. Set the css variable on the root element
+        document.documentElement.style.setProperty('--bg-color', color);
+      });
+    });
+  });
+</script>
+
 </html>

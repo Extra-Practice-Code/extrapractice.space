@@ -3,6 +3,7 @@
 /* Variables */
 :root{
     --xpgreen: #00943f;
+    --bg-color: #FAF9F4;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
   height: 100dvh;
   width: 100vw;
   color: #000;
-  background-color: #FAF9F4;
+  background-color: var(--bg-color);
   font-family: "Arial Narrow";
   font-size: 18px;
   letter-spacing: 0.02em;
@@ -392,7 +393,7 @@ figure.block-image img {
 }
 
 .tab-btn.active {
-  background-color: #faf9f4;
+  background-color: var(--bg-color);
   color: #000;
   border-bottom: none;
   margin-bottom: -1px;
@@ -453,7 +454,7 @@ figure.block-image img {
   border-radius: 10px;
   font-family: "Arial Narrow";
   font-size: 18px;
-  background-color: #FAF9F4;
+  background-color: var(--bg-color);
 }
 
 .newsletter-form input[type="text"]:focus,
