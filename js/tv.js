@@ -37,30 +37,38 @@
             return;
         }
 
-        // Find the first block with an image
+        // Collect all blocks with images
+        const blocksWithImages = [];
+        for (const block of data.data) {
+            if (block.image) {
+                const imageUrl = block.image.original?.url || block.image.large?.src || block.image.medium?.src || block.image.square?.src;
+                if (imageUrl) {
+                    blocksWithImages.push(block);
+                }
+            }
+        }
+
+        // Pick a random block from those with images
         let imageUrl = null;
         let blockTitle = '';
         let sourceUrl = 'https://www.are.na/extra-practice/xp-community-television';
 
-        for (const block of data.data) {
-            if (block.image) {
-                // Prioritize hi-res images
-                imageUrl = block.image.original?.url || block.image.large?.src || block.image.medium?.src || block.image.square?.src;
-                if (imageUrl) {
-                    blockTitle = block.title || 'XP Community Television';
+        if (blocksWithImages.length > 0) {
+            const randomIndex = Math.floor(Math.random() * blocksWithImages.length);
+            const selectedBlock = blocksWithImages[randomIndex];
 
-                    // Get the source URL based on block type
-                    if (block.source?.url) {
-                        sourceUrl = block.source.url;
-                    } else if (block.attachment?.url) {
-                        sourceUrl = block.attachment.url;
-                    }
+            imageUrl = selectedBlock.image.original?.url || selectedBlock.image.large?.src || selectedBlock.image.medium?.src || selectedBlock.image.square?.src;
+            blockTitle = selectedBlock.title || 'XP Community Television';
 
-                    console.log('Found image in block:', block.type, block.title);
-                    console.log('Source URL:', sourceUrl);
-                    break;
-                }
+            // Get the source URL based on block type
+            if (selectedBlock.source?.url) {
+                sourceUrl = selectedBlock.source.url;
+            } else if (selectedBlock.attachment?.url) {
+                sourceUrl = selectedBlock.attachment.url;
             }
+
+            console.log('Selected random image from block:', selectedBlock.type, selectedBlock.title);
+            console.log('Source URL:', sourceUrl);
         }
 
         if (imageUrl) {
