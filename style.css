@@ -563,6 +563,15 @@ figure.block-image figcaption .inner {
     overflow: hidden;
 }
 
+.color-square {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    border-radius: 2px;
+    border: 1px solid #000;
+}
+
 #events {
   border: dashed var(--xpgreen) 1px;
   border-radius: 10px;
