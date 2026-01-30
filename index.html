@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Extra Practice</title>
   <meta name="description" content="Extra Practice is a space for working and learning in the North of Rotterdam, shared by six friends who are active in the field of art and design.">
-  <link href="style.css?v=1.2" rel="stylesheet">
+  <link href="style.css?v=1.3" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="images/favicon.png" type="image/x-icon">
 </head>
@@ -22,13 +22,20 @@
           <br><br>
           The space originated from a desire to create a “school-after-school;” a fruitful environment for working and learning amongst peers, which we were missing after we all finished our Masters in 2019. Within Extra Practice we support each other's individual practices, and organise workshops, presentations and public events to share insights and experiences.</p>
         </div>
-        <div class="block-image map">
-           <p id="address">Linker Rottekade 5A, 3034 NT Rotterdam</p>
-           <iframe width="101%" height="101%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=4.488%2C51.934%2C4.493%2C51.937&amp;layer=mapnik&amp;marker=51.9354297%2C4.4904376" style="border: 0"></iframe>
-        </div>
+
+        <!-- Activity -->
+        <a href="https://www.are.na/extra-practice/activity-efz52cmnw4o">
+            <figure class="block-image">
+              <figcaption>
+                <div class="inner">
+                  A May afternoon at the studio
+                </div>
+              </figcaption>
+              <img src="images/space.jpg" alt="A May afternoon at the studio" id="activity-image">
+            </figure>
+        </a>
 
         <!-- Events -->
-
         <div id="events" class="block">
           <p>Events</p><br>
           <!-- Events will be loaded dynamically from Are.na -->
@@ -73,7 +80,60 @@
           <p class="social">→ <a href="https://special.fish/elliott" target="_blank" rel="noopener noreferrer">@elliott</a></p>
         </div>
       </div>
-    
+
+      <div class="grid-3">
+        <!-- Advertisements -->
+        <figure id="ads" class="block-image">
+          <img src="images/ads/1_emma-s-advertisment-for-elliott.jpg" alt="Advertisement" id="ad-image">
+        </figure>
+
+        <!-- Newsletter -->
+        <div class="block newsletter-block">
+          <div class="newsletter-tabs">
+            <button class="tab-btn active" onclick="switchTab('subscribe')">Subscribe</button>
+            <button class="tab-btn" onclick="switchTab('archive')">Archive</button>
+          </div>
+
+          <!-- Subscribe Tab -->
+          <div id="subscribe-tab" class="tab-content active">
+            <p>For more-or-less monthly updates and thoughts</p>
+
+            <div id="newsletter-message" class="newsletter-message" style="display: none;"></div>
+
+            <form class="newsletter-form" id="newsletter-subscribe-form" action="https://assets.mailerlite.com/jsonp/206466/forms/117148757934474521/subscribe" method="post">
+              <input type="text" name="fields[name]" placeholder="Name (optional)" autocomplete="given-name">
+              <input type="email" name="fields[email]" placeholder="Email" autocomplete="email" required>
+              <input type="hidden" name="ml-submit" value="1">
+              <input type="hidden" name="anticsrf" value="true">
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+
+
+          <!-- Archive Tab -->
+          <div id="archive-tab" class="tab-content">
+            <div id="newsletters-list">
+              <p>Loading newsletters...</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- XP TV -->
+        <a href="https://www.are.na/extra-practice/xp-community-television" target="_blank" rel="noopener noreferrer" id="tv-link">
+          <figure id="tv" class="block-image">
+            <div class="tv-overlay">
+              <div class="play-button"></div>
+              <div class="live-indicator">LIVE</div>
+              <div class="tv-label">XP TV</div>
+            </div>
+            <img src="" id="tv-image">
+          </figure>
+        </a>
+      </div>
+
+
+
       <div class="grid-3">
         <!-- Good Times Bad Times -->
         <div id="GTBT" class="block">
@@ -87,28 +147,18 @@
         <!-- Contact -->
         <div class="block">
           <p>Contact</p><br>
-          <p>→ Subscribe to our <a href="https://dashboard.mailerlite.com/forms/206466/117148757934474521/share" target="_blank">monthly newsletter</a> to see what we are all up to!</p>
-          <br>
-          <p>→ Check our newsletter archive on <a href="https://newsletter.extrapractice.space">newsletter.extrapractice.space</a>!</p>
-          <br>
           <p>→ Follow <a href="https://www.instagram.com/extrapractice" target="_blank" rel="noopener noreferrer">@extrapractice</a> for quick updates on news and (past / future) events!</p><br>
           <p>→ If you would like to join an event, initiate a workshop or simply drop by for a coffee and a chat, don't hesitate to <a href="mailto:mail@extrapractice.space">email us</a>!</p>
-         
+
           <button id="copy-btn" onclick="copyEmail()">Or copy our email!</button>
           <!-- <div id="copy-success-popup">Copied 'info@extrapractice.space'!</div> -->
         </div>
 
-        <!-- Activity Image -->
-        <a href="https://www.are.na/extra-practice/activity-efz52cmnw4o">
-            <figure class="block-image">
-              <figcaption>
-                <div class="inner">
-                  A May afternoon at the studio
-                </div>
-              </figcaption>
-              <img src="images/space.jpg" alt="A May afternoon at the studio" id="activity-image">
-            </figure>
-        </a>
+        <!-- Map -->
+        <div class="block-image map">
+           <p id="address">Linker Rottekade 5A, 3034 NT Rotterdam</p>
+           <iframe width="101%" height="101%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=4.488%2C51.934%2C4.493%2C51.937&amp;layer=mapnik&amp;marker=51.9354297%2C4.4904376" style="border: 0"></iframe>
+        </div>
       </div>
     </main>
   <footer>
@@ -127,9 +177,13 @@
 </body>
 
 <!-- JavaScripts! -->
-<script src="js/activity.js?v=1.2"></script>
-<script src="js/events.js?v=1.2"></script>
-<script src="js/last-updated.js?v=1.2"></script>
-<script src="js/copy-email.js?v=1.2"></script>
+<script src="js/activity.js?v=1.3"></script>
+<script src="js/events.js?v=1.3"></script>
+<script src="js/ads.js?v=1.3"></script>
+<script src="js/newsletter.js?v=1.3"></script>
+<script src="js/newsletters-archive.js?v=1.3"></script>
+<script src="js/tv.js?v=1.3"></script>
+<script src="js/last-updated.js?v=1.3"></script>
+<script src="js/copy-email.js?v=1.3"></script>
 
 </html>
