@@ -1,7 +1,12 @@
 // Fetch last commit date from GitHub API
 fetch('https://api.github.com/repos/Extra-Practice-Code/Extra-Practice/commits/main')
-    .then(response => response.json())
+    .then(response => {
+        console.log('GitHub API response status:', response.status);
+        return response.json();
+    })
     .then(data => {
+        console.log('GitHub API full response:', data);
+
         // Check if data has the expected structure
         if (!data || !data.commit || !data.commit.committer) {
             console.error('GitHub API response missing expected data:', data);
