@@ -641,11 +641,18 @@ footer #footer-inner {
     display: grid;
     grid-template-columns: 1fr;
     height: auto;
+    max-height: none;
   }
   .grid-6 {
     display: grid;
     grid-template-columns: 1fr;
     height: auto;
+  }
+  .block {
+    min-height: 120px;
+  }
+  figure.block-image {
+    height: 250px;
   }
   .map {
     height: 230px;
